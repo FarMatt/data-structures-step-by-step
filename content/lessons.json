@@ -1,0 +1,38 @@
+[
+  {
+    "id": "queues",
+    "title": "Queues",
+    "level": "Basics",
+    "summary": "A queue keeps items in the order they arrive. Add items at the back and remove them from the front.",
+    "walkthrough": "Think of people waiting in line: the next person served is the one who has waited longest. This is called first in, first out (FIFO).",
+    "takeaway": "Enqueue adds at the tail; dequeue removes from the head.",
+    "diagram": "front → [A] [B] [C] ← back"
+  },
+  {
+    "id": "doubly-linked-lists",
+    "title": "Doubly linked lists",
+    "level": "Lists",
+    "summary": "A linked list is made of nodes. Each node stores a value and links to other nodes; a doubly linked node links both forward and backward.",
+    "walkthrough": "Starting at the head, follow each next link to visit the nodes. A previous link lets you move back to the prior node without searching from the head again.",
+    "takeaway": "The links determine the order; nodes do not need to sit next to each other in memory.",
+    "diagram": "NIL ← [A] ⇄ [B] ⇄ [C] → NIL"
+  },
+  {
+    "id": "arrays-and-free-lists",
+    "title": "Array storage and free lists",
+    "level": "Lists",
+    "summary": "An array can store node fields in numbered slots. A free list links together the slots that are currently unused.",
+    "walkthrough": "The list head points to the first used slot. The free pointer points to the first empty slot; allocating takes a slot from that chain, while freeing returns a slot to it.",
+    "takeaway": "Storage location and list order are separate: follow the links to find the logical order.",
+    "diagram": "used: head → slot 4 → slot 1     free: free → slot 2 → slot 7"
+  },
+  {
+    "id": "rooted-trees",
+    "title": "Rooted trees",
+    "level": "Trees",
+    "summary": "A rooted tree starts at one node called the root. Other nodes branch from it, forming parent and child relationships.",
+    "walkthrough": "In a binary tree, each node has up to two children. A first-child/next-sibling representation can also store a tree where a node has many children.",
+    "takeaway": "A list follows one chain; a tree branches into parent and child relationships.",
+    "diagram": "        root\n       /    \\\n     left   right"
+  }
+]

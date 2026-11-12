@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beginner-friendly notes on queues, linked lists, array storage, and rooted trees, with simple examples.">
+  <title>Data Structures, Step by Step</title>
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to lessons</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Data Structures, Step by Step home">DS<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#lessons">Lessons</a>
+      <a href="#try-it">Try it</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <p class="eyebrow">A friendly study guide</p>
+      <h1 id="hero-title">Data structures,<br><span>one idea at a time.</span></h1>
+      <p class="hero-copy">Small explanations and examples for the structures that help programs organize information. Start with the idea, then follow the links.</p>
+      <a class="button-link" href="#lessons">Explore the lessons <span aria-hidden="true">↓</span></a>
+      <div class="hero-note" aria-label="Study reminder"><span class="note-dot"></span>Read a little. Trace an example. Explain it in your own words.</div>
+    </section>
+
+    <section class="lesson-section" id="lessons" aria-labelledby="lessons-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">The building blocks</p><h2 id="lessons-title">Four useful ways to organize data</h2></div>
+        <p>Each lesson focuses on one main idea and a simple example.</p>
+      </div>
+      <div id="lesson-grid" class="lesson-grid" aria-live="polite">
+        <p class="loading-message">Loading the lessons…</p>
+      </div>
+    </section>
+
+    <section class="demo-section" id="try-it" aria-labelledby="demo-title">
+      <div class="demo-copy">
+        <p class="eyebrow">A tiny simulation</p>
+        <h2 id="demo-title">See a queue move</h2>
+        <p>New items join the tail. The item at the head leaves first. Try adding a number, then serving the next one.</p>
+        <form id="enqueue-form" class="enqueue-form">
+          <label for="queue-input">New item</label>
+          <div class="input-row"><input id="queue-input" name="item" maxlength="8" autocomplete="off" placeholder="e.g. 4" required><button type="submit">Enqueue</button></div>
+        </form>
+        <button id="dequeue-button" class="secondary-button" type="button">Dequeue (remove front)</button>
+        <p id="queue-status" class="status" aria-live="polite">The queue starts empty.</p>
+      </div>
+      <div class="queue-card" aria-label="Queue visualization">
+        <div class="queue-labels"><span>HEAD · leaves first</span><span>TAIL · new items join</span></div>
+        <div id="queue-items" class="queue-items"><span class="empty-state">Your queue is empty</span></div>
+        <div class="queue-arrow" aria-hidden="true"><span>← first out</span><span>first in →</span></div>
+      </div>
+    </section>
+
+    <section class="closing" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">Keep this in mind</p>
+      <h2 id="about-title">The links tell you where to go next.</h2>
+      <p>An array gives items numbered places. A linked structure uses pointers to connect items. A queue or tree describes how those connected items are organized and used.</p>
+      <a href="#top" class="text-link">Back to the top ↑</a>
+    </section>
+  </main>
+
+  <footer><span>Data Structures, Step by Step</span><span>Made for learning, not memorizing.</span></footer>
+</body>
+</html>
